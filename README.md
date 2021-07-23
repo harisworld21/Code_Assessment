@@ -47,3 +47,6 @@ TileVIew is a custom UI View which has information of first page tiles TileItemV
 ![Screenshot 2021-07-23 at 21 49 25](https://user-images.githubusercontent.com/19262501/126840126-a832cf54-ec50-4fd6-a19c-a606cb05774c.png)
 
 
+Credits:
+Alamofire for network calls
+AMDots for attractive activity indicator
