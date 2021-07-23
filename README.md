@@ -2,6 +2,24 @@
 
 **Architectural Pattern**: MMVM Design Pattern
 
-![IMG20210723183108](https://user-images.githubusercontent.com/19262501/126819716-29e98f95-fc26-4f17-9adb-b3fb45c5dc09.jpg)
+Class to refer: 
+§**HomePageViewController**>>>> Main master class
+HomePageViewController >>> homePageVM
+makeAPICalls>>>> communicates with service and has a completion handler.
+
+![ViewController](https://user-images.githubusercontent.com/19262501/126833589-f8c584d4-df72-497b-b91b-e746f88761eb.png)
+
+**UI Design**: 
+Carousel view. (tableView display's items like episode, character & Quotes) 
+TableView has subview to show collections of items.
+![CollectionView](https://user-images.githubusercontent.com/19262501/126833783-609a330b-3c35-4286-ae32-d22b933c2529.png)
+
+![Tile Info](https://user-images.githubusercontent.com/19262501/126833989-34f53a79-5b5f-489d-aa02-1e36befe6aed.png)
+
+TileVIew is a custom UI View which has information of first page tiles TileItemView.Swift
+
+
+
+
 
 
