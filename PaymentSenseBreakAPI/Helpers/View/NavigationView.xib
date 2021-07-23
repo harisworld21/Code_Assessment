@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationView" customModule="PaymentSenseBreakAPI" customModuleProvider="target">
+            <connections>
+                <outlet property="customView" destination="pGl-vg-Dgo" id="Yv6-4j-Nl6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="758" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paymentsense-logo" translatesAutoresizingMaskIntoConstraints="NO" id="pGl-vg-Dgo">
+                    <rect key="frame" x="20" y="26" width="303" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="38y-y5-ZLt"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="pGl-vg-Dgo" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="SYi-1k-YOv"/>
+                <constraint firstItem="pGl-vg-Dgo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ffj-Z3-DRj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pGl-vg-Dgo" secondAttribute="bottom" id="sd8-Il-EYh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="278.26086956521743" y="-107.47767857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="paymentsense-logo" width="990" height="180.69999694824219"/>
+    </resources>
+</document>

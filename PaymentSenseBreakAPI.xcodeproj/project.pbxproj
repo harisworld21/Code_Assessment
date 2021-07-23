@@ -1,0 +1,887 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15334F0426A6DDE700328E29 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334F0326A6DDE700328E29 /* LoadingView.swift */; };
+		15334F0926A6DE0D00328E29 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15334F0826A6DE0D00328E29 /* LoadingView.xib */; };
+		15334F1126A6E87E00328E29 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334F1026A6E87E00328E29 /* HomePageViewModel.swift */; };
+		15334F1626A6E8CF00328E29 /* HomePageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334F1526A6E8CF00328E29 /* HomePageAPIService.swift */; };
+		15334F2726A726D700328E29 /* MasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334F2626A726D700328E29 /* MasterTableViewCell.swift */; };
+		15334F2C26A7276200328E29 /* MasterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15334F2B26A7276200328E29 /* MasterTableViewCell.xib */; };
+		15334F3226A73E8100328E29 /* HomePageItemCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15334F3026A73E8100328E29 /* HomePageItemCollectionView.xib */; };
+		15334F3326A73E8100328E29 /* HomePageItemCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334F3126A73E8100328E29 /* HomePageItemCollectionView.swift */; };
+		15334F3E26A7434900328E29 /* HomePageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15334F3D26A7434900328E29 /* HomePageCollectionCell.xib */; };
+		15334F4326A7436F00328E29 /* HomePageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334F4226A7436F00328E29 /* HomePageCollectionCell.swift */; };
+		15334FC926AA1C0D00328E29 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334FC826AA1C0D00328E29 /* CharacterModel.swift */; };
+		15334FCE26AA1C9E00328E29 /* EpisodesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334FCD26AA1C9E00328E29 /* EpisodesModel.swift */; };
+		15334FD326AA1CC700328E29 /* QuotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334FD226AA1CC700328E29 /* QuotesModel.swift */; };
+		15334FD926AA243B00328E29 /* TileItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15334FD726AA243B00328E29 /* TileItemView.swift */; };
+		1533503926AB15F300328E29 /* DetailsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533503826AB15F300328E29 /* DetailsPageViewController.swift */; };
+		1533503E26AB17DA00328E29 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533503D26AB17DA00328E29 /* DetailViewModel.swift */; };
+		1533505726AB291F00328E29 /* DetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533505626AB291F00328E29 /* DetailTableCell.swift */; };
+		157B903F26A5F16D00BBC443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B903E26A5F16D00BBC443 /* AppDelegate.swift */; };
+		157B904126A5F16D00BBC443 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B904026A5F16D00BBC443 /* SceneDelegate.swift */; };
+		157B904326A5F16D00BBC443 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B904226A5F16D00BBC443 /* HomePageViewController.swift */; };
+		157B904626A5F16D00BBC443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157B904426A5F16D00BBC443 /* Main.storyboard */; };
+		157B904826A5F17C00BBC443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157B904726A5F17C00BBC443 /* Assets.xcassets */; };
+		157B904B26A5F17C00BBC443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157B904926A5F17C00BBC443 /* LaunchScreen.storyboard */; };
+		157B905626A5F17C00BBC443 /* PaymentSenseBreakAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B905526A5F17C00BBC443 /* PaymentSenseBreakAPITests.swift */; };
+		157B906126A5F17C00BBC443 /* PaymentSenseBreakAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B906026A5F17C00BBC443 /* PaymentSenseBreakAPIUITests.swift */; };
+		157B908126A62BB200BBC443 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B908026A62BB200BBC443 /* NavigationView.swift */; };
+		157B908626A62BC600BBC443 /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157B908526A62BC600BBC443 /* NavigationView.xib */; };
+		157B908B26A62EB300BBC443 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B908A26A62EB300BBC443 /* Constants.swift */; };
+		157B909426A63B7600BBC443 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 157B909326A63B7600BBC443 /* Alamofire */; };
+		3FDE7531BD952D75D37DCC59 /* Pods_PaymentSenseBreakAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD028B2FA9C770AC8B9E2DF /* Pods_PaymentSenseBreakAPI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		157B905226A5F17C00BBC443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 157B903326A5F16D00BBC443 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 157B903A26A5F16D00BBC443;
+			remoteInfo = PaymentSenseBreakAPI;
+		};
+		157B905D26A5F17C00BBC443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 157B903326A5F16D00BBC443 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 157B903A26A5F16D00BBC443;
+			remoteInfo = PaymentSenseBreakAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15334F0326A6DDE700328E29 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		15334F0826A6DE0D00328E29 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		15334F1026A6E87E00328E29 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		15334F1526A6E8CF00328E29 /* HomePageAPIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageAPIService.swift; sourceTree = "<group>"; };
+		15334F2626A726D700328E29 /* MasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewCell.swift; sourceTree = "<group>"; };
+		15334F2B26A7276200328E29 /* MasterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasterTableViewCell.xib; sourceTree = "<group>"; };
+		15334F3026A73E8100328E29 /* HomePageItemCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageItemCollectionView.xib; sourceTree = "<group>"; };
+		15334F3126A73E8100328E29 /* HomePageItemCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageItemCollectionView.swift; sourceTree = "<group>"; };
+		15334F3D26A7434900328E29 /* HomePageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageCollectionCell.xib; sourceTree = "<group>"; };
+		15334F4226A7436F00328E29 /* HomePageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionCell.swift; sourceTree = "<group>"; };
+		15334FC826AA1C0D00328E29 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		15334FCD26AA1C9E00328E29 /* EpisodesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesModel.swift; sourceTree = "<group>"; };
+		15334FD226AA1CC700328E29 /* QuotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesModel.swift; sourceTree = "<group>"; };
+		15334FD726AA243B00328E29 /* TileItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileItemView.swift; sourceTree = "<group>"; };
+		1533503826AB15F300328E29 /* DetailsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageViewController.swift; sourceTree = "<group>"; };
+		1533503D26AB17DA00328E29 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		1533505626AB291F00328E29 /* DetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableCell.swift; sourceTree = "<group>"; };
+		157B903B26A5F16D00BBC443 /* PaymentSenseBreakAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentSenseBreakAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		157B903E26A5F16D00BBC443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		157B904026A5F16D00BBC443 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		157B904226A5F16D00BBC443 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		157B904526A5F16D00BBC443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		157B904726A5F17C00BBC443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		157B904A26A5F17C00BBC443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		157B904C26A5F17C00BBC443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157B905126A5F17C00BBC443 /* PaymentSenseBreakAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentSenseBreakAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		157B905526A5F17C00BBC443 /* PaymentSenseBreakAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSenseBreakAPITests.swift; sourceTree = "<group>"; };
+		157B905726A5F17C00BBC443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157B905C26A5F17C00BBC443 /* PaymentSenseBreakAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaymentSenseBreakAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		157B906026A5F17C00BBC443 /* PaymentSenseBreakAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSenseBreakAPIUITests.swift; sourceTree = "<group>"; };
+		157B906226A5F17C00BBC443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		157B908026A62BB200BBC443 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		157B908526A62BC600BBC443 /* NavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationView.xib; sourceTree = "<group>"; };
+		157B908A26A62EB300BBC443 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B2EB75C0265824D6714CE41 /* Pods-PaymentSenseBreakAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentSenseBreakAPI.release.xcconfig"; path = "Target Support Files/Pods-PaymentSenseBreakAPI/Pods-PaymentSenseBreakAPI.release.xcconfig"; sourceTree = "<group>"; };
+		3BD028B2FA9C770AC8B9E2DF /* Pods_PaymentSenseBreakAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaymentSenseBreakAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5390BC9EED70720C58343E04 /* Pods-PaymentSenseBreakAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaymentSenseBreakAPI.debug.xcconfig"; path = "Target Support Files/Pods-PaymentSenseBreakAPI/Pods-PaymentSenseBreakAPI.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		157B903826A5F16D00BBC443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDE7531BD952D75D37DCC59 /* Pods_PaymentSenseBreakAPI.framework in Frameworks */,
+				157B909426A63B7600BBC443 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157B904E26A5F17C00BBC443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157B905926A5F17C00BBC443 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1533500426AACB5200328E29 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				157B903E26A5F16D00BBC443 /* AppDelegate.swift */,
+				157B904026A5F16D00BBC443 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1533500526AACB6100328E29 /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				1533501226AACD4D00328E29 /* Model */,
+				1533501126AACCC100328E29 /* ViewModel */,
+				1533500626AACB6B00328E29 /* View */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		1533500626AACB6B00328E29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1533500826AACB9000328E29 /* CustomView */,
+				1533500726AACB7300328E29 /* Controllers */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1533500726AACB7300328E29 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				157B904426A5F16D00BBC443 /* Main.storyboard */,
+				157B904226A5F16D00BBC443 /* HomePageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1533500826AACB9000328E29 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				1533500C26AACC3500328E29 /* TileView */,
+				1533501A26AACE0800328E29 /* TableView */,
+				1533500D26AACC4100328E29 /* CollectionView */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		1533500C26AACC3500328E29 /* TileView */ = {
+			isa = PBXGroup;
+			children = (
+				15334FD726AA243B00328E29 /* TileItemView.swift */,
+			);
+			path = TileView;
+			sourceTree = "<group>";
+		};
+		1533500D26AACC4100328E29 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				15334F3126A73E8100328E29 /* HomePageItemCollectionView.swift */,
+				15334F3026A73E8100328E29 /* HomePageItemCollectionView.xib */,
+				15334F3D26A7434900328E29 /* HomePageCollectionCell.xib */,
+				15334F4226A7436F00328E29 /* HomePageCollectionCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		1533501126AACCC100328E29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				15334F1026A6E87E00328E29 /* HomePageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1533501226AACD4D00328E29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15334FC826AA1C0D00328E29 /* CharacterModel.swift */,
+				15334FCD26AA1C9E00328E29 /* EpisodesModel.swift */,
+				15334FD226AA1CC700328E29 /* QuotesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1533501326AACD5F00328E29 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				15334F1526A6E8CF00328E29 /* HomePageAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1533501A26AACE0800328E29 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				15334F2626A726D700328E29 /* MasterTableViewCell.swift */,
+				15334F2B26A7276200328E29 /* MasterTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		1533501B26AACE3000328E29 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				157B908A26A62EB300BBC443 /* Constants.swift */,
+				1533501C26AACE3900328E29 /* View */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1533501C26AACE3900328E29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15334F0326A6DDE700328E29 /* LoadingView.swift */,
+				15334F0826A6DE0D00328E29 /* LoadingView.xib */,
+				157B908026A62BB200BBC443 /* NavigationView.swift */,
+				157B908526A62BC600BBC443 /* NavigationView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1533503726AB15D800328E29 /* Detail Page */ = {
+			isa = PBXGroup;
+			children = (
+				1533503826AB15F300328E29 /* DetailsPageViewController.swift */,
+				1533505626AB291F00328E29 /* DetailTableCell.swift */,
+				1533503D26AB17DA00328E29 /* DetailViewModel.swift */,
+			);
+			path = "Detail Page";
+			sourceTree = "<group>";
+		};
+		157B903226A5F16D00BBC443 = {
+			isa = PBXGroup;
+			children = (
+				157B903D26A5F16D00BBC443 /* PaymentSenseBreakAPI */,
+				157B905426A5F17C00BBC443 /* PaymentSenseBreakAPITests */,
+				157B905F26A5F17C00BBC443 /* PaymentSenseBreakAPIUITests */,
+				157B903C26A5F16D00BBC443 /* Products */,
+				33F6B7483B15985CE6EB8B70 /* Pods */,
+				E0C6E6228A1A294F9E1120C2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		157B903C26A5F16D00BBC443 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				157B903B26A5F16D00BBC443 /* PaymentSenseBreakAPI.app */,
+				157B905126A5F17C00BBC443 /* PaymentSenseBreakAPITests.xctest */,
+				157B905C26A5F17C00BBC443 /* PaymentSenseBreakAPIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		157B903D26A5F16D00BBC443 /* PaymentSenseBreakAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1533501B26AACE3000328E29 /* Helpers */,
+				1533501326AACD5F00328E29 /* Services */,
+				1533503726AB15D800328E29 /* Detail Page */,
+				1533500526AACB6100328E29 /* Home Page */,
+				1533500426AACB5200328E29 /* Main */,
+				157B904726A5F17C00BBC443 /* Assets.xcassets */,
+				157B904926A5F17C00BBC443 /* LaunchScreen.storyboard */,
+				157B904C26A5F17C00BBC443 /* Info.plist */,
+			);
+			path = PaymentSenseBreakAPI;
+			sourceTree = "<group>";
+		};
+		157B905426A5F17C00BBC443 /* PaymentSenseBreakAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				157B905526A5F17C00BBC443 /* PaymentSenseBreakAPITests.swift */,
+				157B905726A5F17C00BBC443 /* Info.plist */,
+			);
+			path = PaymentSenseBreakAPITests;
+			sourceTree = "<group>";
+		};
+		157B905F26A5F17C00BBC443 /* PaymentSenseBreakAPIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				157B906026A5F17C00BBC443 /* PaymentSenseBreakAPIUITests.swift */,
+				157B906226A5F17C00BBC443 /* Info.plist */,
+			);
+			path = PaymentSenseBreakAPIUITests;
+			sourceTree = "<group>";
+		};
+		33F6B7483B15985CE6EB8B70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5390BC9EED70720C58343E04 /* Pods-PaymentSenseBreakAPI.debug.xcconfig */,
+				1B2EB75C0265824D6714CE41 /* Pods-PaymentSenseBreakAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E0C6E6228A1A294F9E1120C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BD028B2FA9C770AC8B9E2DF /* Pods_PaymentSenseBreakAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		157B903A26A5F16D00BBC443 /* PaymentSenseBreakAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 157B906526A5F17C00BBC443 /* Build configuration list for PBXNativeTarget "PaymentSenseBreakAPI" */;
+			buildPhases = (
+				C4DC73D7E87F5F9BACC6F873 /* [CP] Check Pods Manifest.lock */,
+				157B903726A5F16D00BBC443 /* Sources */,
+				157B903826A5F16D00BBC443 /* Frameworks */,
+				157B903926A5F16D00BBC443 /* Resources */,
+				7F52475CD9FF8DD1339AD14E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaymentSenseBreakAPI;
+			packageProductDependencies = (
+				157B909326A63B7600BBC443 /* Alamofire */,
+			);
+			productName = PaymentSenseBreakAPI;
+			productReference = 157B903B26A5F16D00BBC443 /* PaymentSenseBreakAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		157B905026A5F17C00BBC443 /* PaymentSenseBreakAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 157B906826A5F17C00BBC443 /* Build configuration list for PBXNativeTarget "PaymentSenseBreakAPITests" */;
+			buildPhases = (
+				157B904D26A5F17C00BBC443 /* Sources */,
+				157B904E26A5F17C00BBC443 /* Frameworks */,
+				157B904F26A5F17C00BBC443 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				157B905326A5F17C00BBC443 /* PBXTargetDependency */,
+			);
+			name = PaymentSenseBreakAPITests;
+			productName = PaymentSenseBreakAPITests;
+			productReference = 157B905126A5F17C00BBC443 /* PaymentSenseBreakAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		157B905B26A5F17C00BBC443 /* PaymentSenseBreakAPIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 157B906B26A5F17C00BBC443 /* Build configuration list for PBXNativeTarget "PaymentSenseBreakAPIUITests" */;
+			buildPhases = (
+				157B905826A5F17C00BBC443 /* Sources */,
+				157B905926A5F17C00BBC443 /* Frameworks */,
+				157B905A26A5F17C00BBC443 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				157B905E26A5F17C00BBC443 /* PBXTargetDependency */,
+			);
+			name = PaymentSenseBreakAPIUITests;
+			productName = PaymentSenseBreakAPIUITests;
+			productReference = 157B905C26A5F17C00BBC443 /* PaymentSenseBreakAPIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		157B903326A5F16D00BBC443 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					157B903A26A5F16D00BBC443 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					157B905026A5F17C00BBC443 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 157B903A26A5F16D00BBC443;
+					};
+					157B905B26A5F17C00BBC443 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 157B903A26A5F16D00BBC443;
+					};
+				};
+			};
+			buildConfigurationList = 157B903626A5F16D00BBC443 /* Build configuration list for PBXProject "PaymentSenseBreakAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 157B903226A5F16D00BBC443;
+			packageReferences = (
+				157B909226A63B7600BBC443 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 157B903C26A5F16D00BBC443 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				157B903A26A5F16D00BBC443 /* PaymentSenseBreakAPI */,
+				157B905026A5F17C00BBC443 /* PaymentSenseBreakAPITests */,
+				157B905B26A5F17C00BBC443 /* PaymentSenseBreakAPIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		157B903926A5F16D00BBC443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157B904B26A5F17C00BBC443 /* LaunchScreen.storyboard in Resources */,
+				157B904826A5F17C00BBC443 /* Assets.xcassets in Resources */,
+				157B908626A62BC600BBC443 /* NavigationView.xib in Resources */,
+				15334F3E26A7434900328E29 /* HomePageCollectionCell.xib in Resources */,
+				15334F2C26A7276200328E29 /* MasterTableViewCell.xib in Resources */,
+				15334F3226A73E8100328E29 /* HomePageItemCollectionView.xib in Resources */,
+				157B904626A5F16D00BBC443 /* Main.storyboard in Resources */,
+				15334F0926A6DE0D00328E29 /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157B904F26A5F17C00BBC443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157B905A26A5F17C00BBC443 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F52475CD9FF8DD1339AD14E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentSenseBreakAPI/Pods-PaymentSenseBreakAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaymentSenseBreakAPI/Pods-PaymentSenseBreakAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaymentSenseBreakAPI/Pods-PaymentSenseBreakAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4DC73D7E87F5F9BACC6F873 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaymentSenseBreakAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		157B903726A5F16D00BBC443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157B908B26A62EB300BBC443 /* Constants.swift in Sources */,
+				15334FCE26AA1C9E00328E29 /* EpisodesModel.swift in Sources */,
+				157B904326A5F16D00BBC443 /* HomePageViewController.swift in Sources */,
+				15334F1626A6E8CF00328E29 /* HomePageAPIService.swift in Sources */,
+				15334FD926AA243B00328E29 /* TileItemView.swift in Sources */,
+				1533503E26AB17DA00328E29 /* DetailViewModel.swift in Sources */,
+				15334F1126A6E87E00328E29 /* HomePageViewModel.swift in Sources */,
+				1533503926AB15F300328E29 /* DetailsPageViewController.swift in Sources */,
+				157B903F26A5F16D00BBC443 /* AppDelegate.swift in Sources */,
+				15334FD326AA1CC700328E29 /* QuotesModel.swift in Sources */,
+				157B908126A62BB200BBC443 /* NavigationView.swift in Sources */,
+				1533505726AB291F00328E29 /* DetailTableCell.swift in Sources */,
+				15334F2726A726D700328E29 /* MasterTableViewCell.swift in Sources */,
+				157B904126A5F16D00BBC443 /* SceneDelegate.swift in Sources */,
+				15334F0426A6DDE700328E29 /* LoadingView.swift in Sources */,
+				15334FC926AA1C0D00328E29 /* CharacterModel.swift in Sources */,
+				15334F3326A73E8100328E29 /* HomePageItemCollectionView.swift in Sources */,
+				15334F4326A7436F00328E29 /* HomePageCollectionCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157B904D26A5F17C00BBC443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157B905626A5F17C00BBC443 /* PaymentSenseBreakAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		157B905826A5F17C00BBC443 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157B906126A5F17C00BBC443 /* PaymentSenseBreakAPIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		157B905326A5F17C00BBC443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 157B903A26A5F16D00BBC443 /* PaymentSenseBreakAPI */;
+			targetProxy = 157B905226A5F17C00BBC443 /* PBXContainerItemProxy */;
+		};
+		157B905E26A5F17C00BBC443 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 157B903A26A5F16D00BBC443 /* PaymentSenseBreakAPI */;
+			targetProxy = 157B905D26A5F17C00BBC443 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		157B904426A5F16D00BBC443 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157B904526A5F16D00BBC443 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		157B904926A5F17C00BBC443 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				157B904A26A5F17C00BBC443 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		157B906326A5F17C00BBC443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		157B906426A5F17C00BBC443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		157B906626A5F17C00BBC443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5390BC9EED70720C58343E04 /* Pods-PaymentSenseBreakAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TY4AYLAAY;
+				INFOPLIST_FILE = PaymentSenseBreakAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haripras.PaymentSenseBreakAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		157B906726A5F17C00BBC443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2EB75C0265824D6714CE41 /* Pods-PaymentSenseBreakAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TY4AYLAAY;
+				INFOPLIST_FILE = PaymentSenseBreakAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haripras.PaymentSenseBreakAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		157B906926A5F17C00BBC443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TY4AYLAAY;
+				INFOPLIST_FILE = PaymentSenseBreakAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haripras.PaymentSenseBreakAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaymentSenseBreakAPI.app/PaymentSenseBreakAPI";
+			};
+			name = Debug;
+		};
+		157B906A26A5F17C00BBC443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TY4AYLAAY;
+				INFOPLIST_FILE = PaymentSenseBreakAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haripras.PaymentSenseBreakAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PaymentSenseBreakAPI.app/PaymentSenseBreakAPI";
+			};
+			name = Release;
+		};
+		157B906C26A5F17C00BBC443 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TY4AYLAAY;
+				INFOPLIST_FILE = PaymentSenseBreakAPIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haripras.PaymentSenseBreakAPIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaymentSenseBreakAPI;
+			};
+			name = Debug;
+		};
+		157B906D26A5F17C00BBC443 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TY4AYLAAY;
+				INFOPLIST_FILE = PaymentSenseBreakAPIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.haripras.PaymentSenseBreakAPIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PaymentSenseBreakAPI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		157B903626A5F16D00BBC443 /* Build configuration list for PBXProject "PaymentSenseBreakAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157B906326A5F17C00BBC443 /* Debug */,
+				157B906426A5F17C00BBC443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		157B906526A5F17C00BBC443 /* Build configuration list for PBXNativeTarget "PaymentSenseBreakAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157B906626A5F17C00BBC443 /* Debug */,
+				157B906726A5F17C00BBC443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		157B906826A5F17C00BBC443 /* Build configuration list for PBXNativeTarget "PaymentSenseBreakAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157B906926A5F17C00BBC443 /* Debug */,
+				157B906A26A5F17C00BBC443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		157B906B26A5F17C00BBC443 /* Build configuration list for PBXNativeTarget "PaymentSenseBreakAPIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157B906C26A5F17C00BBC443 /* Debug */,
+				157B906D26A5F17C00BBC443 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		157B909226A63B7600BBC443 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		157B909326A63B7600BBC443 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 157B909226A63B7600BBC443 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 157B903326A5F16D00BBC443 /* Project object */;
+}

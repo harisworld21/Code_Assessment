@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemsCell" rowHeight="276" id="wSp-eM-ruP" customClass="MasterTableViewCell" customModule="PaymentSenseBreakAPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wSp-eM-ruP" id="yxs-jM-pxo">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6oi-Is-iXO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="276"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg3-vd-rp6">
+                        <rect key="frame" x="35" y="16" width="62" height="31"/>
+                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="25"/>
+                        <color key="textColor" red="0.95552833793089564" green="0.5590606756319948" blue="0.010639478028875068" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaG-c3-3de" customClass="HomePageItemCollectionView" customModule="PaymentSenseBreakAPI" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="52" width="414" height="204"/>
+                        <color key="backgroundColor" red="0.24093810426483125" green="0.24380641502988876" blue="0.24380641502988876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hg3-vd-rp6" firstAttribute="leading" secondItem="yxs-jM-pxo" secondAttribute="leadingMargin" constant="15" id="HUC-AK-18N"/>
+                    <constraint firstItem="6oi-Is-iXO" firstAttribute="top" secondItem="yxs-jM-pxo" secondAttribute="top" id="IjG-kA-QIH"/>
+                    <constraint firstItem="6oi-Is-iXO" firstAttribute="leading" secondItem="yxs-jM-pxo" secondAttribute="leading" id="XG7-QC-H9M"/>
+                    <constraint firstItem="SaG-c3-3de" firstAttribute="top" secondItem="hg3-vd-rp6" secondAttribute="bottom" constant="5" id="azg-81-98r"/>
+                    <constraint firstItem="hg3-vd-rp6" firstAttribute="top" secondItem="yxs-jM-pxo" secondAttribute="topMargin" constant="5" id="cSi-BO-j8E"/>
+                    <constraint firstAttribute="bottom" secondItem="SaG-c3-3de" secondAttribute="bottom" constant="20" id="g8C-yE-FV2"/>
+                    <constraint firstAttribute="trailing" secondItem="SaG-c3-3de" secondAttribute="trailing" id="sNd-xD-wt7"/>
+                    <constraint firstItem="SaG-c3-3de" firstAttribute="leading" secondItem="yxs-jM-pxo" secondAttribute="leading" id="sq1-D1-x2f"/>
+                    <constraint firstAttribute="trailing" secondItem="6oi-Is-iXO" secondAttribute="trailing" id="suZ-SD-d1q"/>
+                    <constraint firstAttribute="bottom" secondItem="6oi-Is-iXO" secondAttribute="bottom" id="vza-P5-FCW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailedView" destination="SaG-c3-3de" id="cSv-Yq-VL9"/>
+                <outlet property="titleStr" destination="hg3-vd-rp6" id="nW1-Wl-UbC"/>
+            </connections>
+            <point key="canvasLocation" x="-75.362318840579718" y="135.26785714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
