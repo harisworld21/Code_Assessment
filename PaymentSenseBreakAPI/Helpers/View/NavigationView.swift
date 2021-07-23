@@ -22,6 +22,7 @@ class NavigationView : UIView {
         commonInit()
     }
     
+    //MARK: Navigation view with Label
     func commonInit(){
         let viewFromXib = Bundle.main.loadNibNamed("NavigationView", owner: self, options: nil)![0] as! UIView
         viewFromXib.frame = self.bounds

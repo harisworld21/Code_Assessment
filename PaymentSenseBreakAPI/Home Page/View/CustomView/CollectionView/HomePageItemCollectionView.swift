@@ -46,7 +46,7 @@ class HomePageItemCollectionView : UIView, UICollectionViewDelegate, UICollectio
     }
 
 }
-
+//MARK: CollectionView delegate
 extension HomePageItemCollectionView{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arr.count
@@ -66,10 +66,12 @@ extension HomePageItemCollectionView{
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let curIndex = indexPath.row
+        //MARK: COmpletion handler to viewController
         didSelectItem(curIndex)
     }
     
     //TODO: Can remove model based approach inside VIewMOdel
+    //MARK: Evaluate which item to show
     func fillCollectionView(cell: HomePageCollectionCell, indexPath: IndexPath){
         if let episode = arr[indexPath.row] as? EpisodesModel, let title = episode.title, let season = episode.season
         {

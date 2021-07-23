@@ -10,7 +10,7 @@ import Foundation
 class HomePageViewModel{
     let serviceAPI = HomePageAPIService()
     var tableItem = [Any]()
-    
+    //MARK: Page 1 ViewModel Call from Page1 ViewController
     func makeAPICalls(completion: @escaping([Any])->()){
         for item in DISPLAY_ITEMS
         {
@@ -23,6 +23,7 @@ class HomePageViewModel{
         }
     }
     
+    //MARK: Page 1 ViewModel actual place where call for episode, character & quotes
     func searchItemAPICall(item:String, hasCompleted: @escaping(Bool)->()){
         serviceAPI.searchItemAPI(item: item, completion: { data in
             switch(item){

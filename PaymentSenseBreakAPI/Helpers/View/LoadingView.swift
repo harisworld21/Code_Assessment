@@ -23,6 +23,7 @@ class LoadingView : UIView {
         commonInit()
     }
     
+    //MARK: Spinner class to show activity indicator
     func commonInit(){
         let viewFromXib = Bundle.main.loadNibNamed("LoadingView", owner: self, options: nil)![0] as! UIView
         viewFromXib.frame = self.bounds
@@ -30,12 +31,14 @@ class LoadingView : UIView {
         self.isHidden = true
     }
     
+    //MARK: Start spinner
     func start()
     {
         spinner.animationType = .jump
         self.isHidden = false
     }
     
+    //MARK: Stop spinner
     func stop()
     {
         self.isHidden = true

@@ -3,7 +3,5 @@
 
 target 'PaymentSenseBreakAPI' do
   use_frameworks!
-  pod 'SCLAlertView', '~> 0.8'
-  pod 'CarouselCollectionViewLayout', '~> 1.0'
   pod 'AMDots'
 end

@@ -14,7 +14,7 @@ let CONST_TWITTERAPI_RULE__URL = "https://api.twitter.com/2/tweets/search/stream
 let CONST_TWITTERAPI_FILTER_STREAM_URL = "https://api.twitter.com/2/tweets/search/stream?tweet.fields=geo%2Cauthor_id&expansions=geo.place_id%2Cauthor_id&place.fields=geo%2Cname&user.fields=location"
 
 
-
+//MARK: Convert data to a MODEL
 func parse<T:Codable>(type:T.Type, data: Data)->T?{
     guard let R = try? JSONDecoder().decode(T.self, from: data) else
     {
@@ -24,7 +24,7 @@ func parse<T:Codable>(type:T.Type, data: Data)->T?{
 }
 
 
-
+//MARK: Download image from URL
 func downloadImage(from url: URL, completion: @escaping(UIImage?)->()) {
     getData(from: url) { data, response, error in
         guard let data = data, error == nil, let img = UIImage(data: data) else { return }

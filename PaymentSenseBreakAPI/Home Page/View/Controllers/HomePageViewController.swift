@@ -25,6 +25,7 @@ class HomePageViewController: UIViewController {
         loadUserInterface()
     }
     
+    //MARK: Initial page
     func loadUserInterface(){
         let myNib = UINib(nibName: "MasterTableViewCell", bundle: nil)
         tableView.register(myNib, forCellReuseIdentifier: "itemsCell")
@@ -32,6 +33,8 @@ class HomePageViewController: UIViewController {
         activityIndicator = LoadingView(frame: self.view.frame)
         self.view.addSubview(activityIndicator)
         activityIndicator.start()
+        
+        //MARK: Step 1 API call to get items
         homePageVM.makeAPICalls(completion: { result in
             self.listItems = result
             DispatchQueue.main.async {
@@ -39,12 +42,13 @@ class HomePageViewController: UIViewController {
                 self.tableView.reloadData()
             }
         })
-        
+        //MARK: When a cell is selected
         didSelectItem = { data in
             self.shouldLoadVC(data: data, vcName: "detailsVC", sbName: "Main")
         }
     }
     
+    //MARK: Load ViewController 2
     func shouldLoadVC(data: Any, vcName:String, sbName:String){
         let storyboard = UIStoryboard(name: sbName, bundle: nil)
         if let vc = storyboard.instantiateViewController(withIdentifier: vcName) as? DetailsPageViewController
@@ -58,18 +62,29 @@ class HomePageViewController: UIViewController {
 
 
 extension HomePageViewController : UITableViewDataSource, UITableViewDelegate {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.listItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemsCell") as! MasterTableViewCell
+        let item = listItems[indexPath.row] as? [Any] ?? [Any]()
         cell.titleStr.text = ""
-        cell.detailedView.arr = listItems[indexPath.row] as? [Any] ?? [Any]()
+        if let episode = item as? [EpisodesModel]
+        {
+            cell.titleStr.text = "Episode"
+        }
+        else if let quotes = item as? [QuotesModel]{
+            cell.titleStr.text = "Quotes"
+        }
+        else if let character = item as? [CharacterModel]{
+            cell.titleStr.text = "Characters"
+        }
+
+        cell.detailedView.arr = item
         cell.detailedView.collectionView.reloadData()
         cell.detailedView.didSelectItem = { curIndex in
-//            TODO: Finish via viewmodel
-            
             self.didSelectItem(cell.detailedView.arr[curIndex])
         }
         return cell

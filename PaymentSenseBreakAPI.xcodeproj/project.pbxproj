@@ -247,11 +247,27 @@
 		1533503726AB15D800328E29 /* Detail Page */ = {
 			isa = PBXGroup;
 			children = (
-				1533503826AB15F300328E29 /* DetailsPageViewController.swift */,
-				1533505626AB291F00328E29 /* DetailTableCell.swift */,
-				1533503D26AB17DA00328E29 /* DetailViewModel.swift */,
+				1533505F26AB559700328E29 /* ViewModel */,
+				1533505E26AB558800328E29 /* View */,
 			);
 			path = "Detail Page";
+			sourceTree = "<group>";
+		};
+		1533505E26AB558800328E29 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1533503826AB15F300328E29 /* DetailsPageViewController.swift */,
+				1533505626AB291F00328E29 /* DetailTableCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1533505F26AB559700328E29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1533503D26AB17DA00328E29 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		157B903226A5F16D00BBC443 = {

@@ -20,15 +20,17 @@ class DetailsPageViewController: UIViewController{
     override func viewDidLoad() {
         self.setupUIItems()
     }
-    
+    //MARK: Init UI setup
     func setupUIItems(){
 
         activityIndicator = LoadingView(frame: self.view.frame)
         self.view.addSubview(activityIndicator)
         self.activityIndicator.start()
         if detailItem != nil{
+            //MARK: Parse data from page 1
             self.displayItems = detailVM.parseData(data: detailItem)
             self.tableView.reloadData()
+            //MARK: Fetch Image to show on page 2
             detailVM.fetchImage(data: detailItem, completion: { imge in
                 DispatchQueue.main.async {
                     self.activityIndicator.stop()

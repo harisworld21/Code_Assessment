@@ -8,8 +8,9 @@
 import Foundation
 import UIKit
 
+//MARK: Page 2 view model
 class DetailViewModel : NSObject{
-    
+    //MARK: Parse the data coming from page 1 and convert to a string of array
     func parseData(data:Any?) -> ([String]){
         if let character = data as? CharacterModel {
             var arr = [""]
@@ -64,7 +65,7 @@ class DetailViewModel : NSObject{
         return [""]
     }
     
-    
+    //MARK: Page 2 uses this to show or hide image
     func fetchImage(data:Any?, completion: @escaping(UIImage?)->()){
         if let character = data as? CharacterModel, let url = URL(string: character.img ?? "") {
             downloadImage(from: url, completion: { img in

@@ -22,14 +22,28 @@ class PaymentSenseBreakAPIUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testAppLoad() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCUIApplication().tables.staticTexts["Walter White"].tap()
+        XCUIApplication().children(matching: .window).element(boundBy: 0).swipeDown()
     }
+    
+    func testLoadQuotes() throws {
+        
+        let app = XCUIApplication()
+        let tablesQuery = app.tables
+        app.launch()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Title : Cat's in the Bag..."].press(forDuration: 0.7);/*[[".cells.staticTexts[\"Title : Cat's in the Bag...\"]",".tap()",".press(forDuration: 0.7);",".staticTexts[\"Title : Cat's in the Bag...\"]"],[[[-1,3,1],[-1,0,1]],[[-1,2],[-1,1]]],[0,0]]@END_MENU_TOKEN@*/
+        app.windows.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .other).element/*@START_MENU_TOKEN@*/.swipeLeft()/*[[".swipeDown()",".swipeLeft()"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Title : Pilot"].press(forDuration: 0.6);/*[[".cells.staticTexts[\"Title : Pilot\"]",".tap()",".press(forDuration: 0.6);",".staticTexts[\"Title : Pilot\"]"],[[[-1,3,1],[-1,0,1]],[[-1,2],[-1,1]]],[0,0]]@END_MENU_TOKEN@*/
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Pilot"]/*[[".cells.staticTexts[\"Pilot\"]",".staticTexts[\"Pilot\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeDown()
+        
+    }
+    
+    
+    
 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {

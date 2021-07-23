@@ -12,6 +12,7 @@ import UIKit
 
 class HomePageAPIService{
     
+    //MARK: Common API to call all items
     func searchItemAPI(item:String , completion: @escaping(_ result: Data? )->()){
         let itemUrl = BASE_URL + item
         AF.request(itemUrl, method: .get, encoding: JSONEncoding.default).responseJSON(completionHandler: { response in

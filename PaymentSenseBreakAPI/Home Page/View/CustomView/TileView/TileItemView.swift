@@ -24,6 +24,7 @@ class TileItemView : UIView {
         super.init(coder: coder)
     }
     
+    //MARK: To customize same view for Episode, Character and Quotes
     func hideIfEmpty(){
         name.isHidden = name.text?.isEmpty ?? true
         idx.isHidden = idx.text?.isEmpty ?? true
